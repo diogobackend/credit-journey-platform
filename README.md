@@ -24,12 +24,15 @@ A Credit Journey Platform simula esse fluxo usando microservices independentes, 
 Imagine o seguinte cenário:
 
 1. Um cliente chamado João se cadastra no banco digital.
-2. O `credit-customer-service` salva seus dados e publica o evento `CustomerCreated` -> https://github.com/diogobackend/credit-customer-service
+2. O `credit-customer-service` salva seus dados e publica o evento `CustomerCreated`
 3. O `credit-rules-engine-service` consome esse evento e avalia se João pode receber crédito.
 4. Se João for aprovado, o serviço publica `CustomerEligibilityApproved`.
 5. O `credit-limit-service` calcula um limite inicial, por exemplo, R$ 1.000,00.
 6. O `credit-communication-service` envia uma notificação informando que o limite foi aprovado.
 7. O `credit-audit-service` registra toda a jornada para consulta futura.
+
+Microservices:
+https://github.com/diogobackend/credit-customer-service
 
 Fluxo resumido:
 
