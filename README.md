@@ -32,6 +32,7 @@ Imagine o seguinte cenário:
 7. O `credit-audit-service` registra toda a jornada para consulta futura.
 
 Microservices:
+
 https://github.com/diogobackend/credit-customer-service
 
 Fluxo resumido:
