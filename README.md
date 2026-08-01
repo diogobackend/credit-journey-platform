@@ -6,6 +6,23 @@ O projeto representa uma arquitetura de microservices usada por um banco emissor
 
 ---
 
+## Repositórios
+
+| Repositório | Responsabilidade |
+|---|---|
+| [credit-customer-service](https://github.com/diogobackend/credit-customer-service) | Cadastro, consulta, edição, status e exclusão de clientes |
+| [credit-limit-service](https://github.com/diogobackend/credit-limit-service) | Cálculo e manutenção de limite |
+| `credit-rules-engine-service` | Regras de elegibilidade de crédito |
+| `credit-orchestrator-service` | Orquestração da jornada de crédito |
+| `credit-auth-service` | Login, autenticação, JWT e roles |
+| `credit-api-gateway` | Entrada única, roteamento e validação de token |
+| `credit-communication-service` | Comunicação com cliente, retry e DLQ |
+| `credit-audit-service` | Auditoria e timeline da jornada |
+| `credit-config-server` | Configuração centralizada |
+| `credit-platform-infra` | Infraestrutura local e Kubernetes |
+| `credit-shared-contracts` | Contratos de APIs e eventos |
+| `credit-observability-starter` | Lib compartilhada de observabilidade |
+
 ## O que este produto resolve?
 
 Em um banco digital, a concessão de crédito não acontece em uma única etapa.
@@ -135,25 +152,6 @@ Além dos microservices, a plataforma também possui repositórios de apoio para
 O `credit-observability-starter` não é um microservice.
 
 Ele é uma biblioteca compartilhada usada pelos serviços para evitar duplicação de código técnico.
-
----
-
-## Repositórios
-
-| Repositório | Responsabilidade |
-|---|---|
-| [credit-customer-service](https://github.com/diogobackend/credit-customer-service) | Cadastro, consulta, edição, status e exclusão de clientes |
-| `credit-limit-service` | Cálculo e manutenção de limite |
-| `credit-rules-engine-service` | Regras de elegibilidade de crédito |
-| `credit-orchestrator-service` | Orquestração da jornada de crédito |
-| `credit-auth-service` | Login, autenticação, JWT e roles |
-| `credit-api-gateway` | Entrada única, roteamento e validação de token |
-| `credit-communication-service` | Comunicação com cliente, retry e DLQ |
-| `credit-audit-service` | Auditoria e timeline da jornada |
-| `credit-config-server` | Configuração centralizada |
-| `credit-platform-infra` | Infraestrutura local e Kubernetes |
-| `credit-shared-contracts` | Contratos de APIs e eventos |
-| `credit-observability-starter` | Lib compartilhada de observabilidade |
 
 ---
 
