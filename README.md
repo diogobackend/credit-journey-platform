@@ -129,9 +129,9 @@ Principais objetivos:
 |---|---|
 | `credit-auth-service` | Gerencia login, autenticação, usuários, roles e geração de JWT |
 | `credit-api-gateway` | Porta de entrada da plataforma, roteamento, validação de token e filtros técnicos |
-| `credit-customer-service` | Gerencia cadastro, status e perfil do cliente |
+| [credit-customer-service](https://github.com/diogobackend/credit-customer-service) | Gerencia cadastro, status e perfil do cliente |
 | `credit-rules-engine-service` | Avalia elegibilidade e políticas de crédito |
-| `credit-limit-service` | Calcula e mantém limites de crédito |
+| [credit-limit-service](https://github.com/diogobackend/credit-limit-service) | Calcula e mantém limites de crédito |
 | `credit-orchestrator-service` | Coordena a jornada de crédito entre os microservices |
 | `credit-communication-service` | Dispara comunicações para o cliente |
 | `credit-audit-service` | Registra histórico, eventos e timeline da jornada |
