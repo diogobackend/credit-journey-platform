@@ -171,12 +171,6 @@ Exemplos de responsabilidades:
 - excluir cliente;
 - publicar eventos como `CustomerCreated`, `CustomerUpdated`, `CustomerStatusChanged` e `CustomerDeleted`.
 
-Repositório:
-
-```text
-https://github.com/diogobackend/credit-customer-service
-```
-
 ---
 
 ### [credit-limit-service](https://github.com/diogobackend/credit-limit-service)
@@ -499,9 +493,9 @@ Cada microservice possui seu próprio banco, evitando acoplamento direto entre d
 | Serviço | Banco |
 |---|---|
 | `credit-auth-service` | `auth_db` |
-| `credit-customer-service` | `customer_db` |
+| [credit-customer-service](https://github.com/diogobackend/credit-customer-service) | `customer_db` |
 | `credit-rules-engine-service` | `rules_db` |
-| `credit-limit-service` | `limit_db` |
+| [credit-limit-service](https://github.com/diogobackend/credit-limit-service) | `limit_db` |
 | `credit-communication-service` | `communication_db` |
 | `credit-audit-service` | `audit_db` |
 
