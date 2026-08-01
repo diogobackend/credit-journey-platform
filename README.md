@@ -701,6 +701,6 @@ Construção incremental planejada:
 Status atual:
 
 ```text
-[credit-customer-service](https://github.com/diogobackend/credit-customer-service): CRUD básico implementado
-[credit-limit-service](https://github.com/diogobackend/credit-limit-service) iniciando desenvolvimento
+credit-customer-service: CRUD básico implementado
+credit-limit-service: iniciando desenvolvimento
 ```
