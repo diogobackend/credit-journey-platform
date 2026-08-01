@@ -421,7 +421,7 @@ Regras arquiteturais:
 
 ---
 
-## Comunicação entre serviços
+## 11 - Comunicação entre serviços
 
 A plataforma usa três formas principais de comunicação.
 
@@ -474,7 +474,7 @@ Exemplos:
 
 ---
 
-## 11 - Autenticação e autorização
+## 12 - Autenticação e autorização
 
 A autenticação será centralizada no `credit-auth-service`.
 
@@ -506,7 +506,7 @@ Exemplo de payload do token:
 
 ---
 
-## 12 - Banco de dados
+## 13 - Banco de dados
 
 A plataforma utiliza a estratégia `database per service`.
 
@@ -535,7 +535,7 @@ src/main/resources/db/migration/
 
 ---
 
-## 13 - Padrões aplicados
+## 14 - Padrões aplicados
 
 - Arquitetura Hexagonal;
 - Ports and Adapters;
@@ -566,7 +566,7 @@ src/main/resources/db/migration/
 
 ---
 
-## 14 - Observabilidade
+## 15 - Observabilidade
 
 A plataforma será preparada para expor logs, métricas e tracing.
 
@@ -649,7 +649,7 @@ O Grafana será usado para visualizar:
 
 ---
 
-## 15 - Tecnologias
+## 16 - Tecnologias
 
 - Kotlin
 - Java 21
@@ -694,7 +694,7 @@ Esse Peojeto simula problemas comuns de sistemas backend reais.
 
 ---
 
-## 16 - Status
+## 17 - Status
 
 Projeto em desenvolvimento
 
