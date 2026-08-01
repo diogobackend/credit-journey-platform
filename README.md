@@ -79,9 +79,9 @@ credit-api-gateway
       v
 credit-orchestrator-service
       |
-      |--> [credit-customer-service](https://github.com/diogobackend/credit-customer-service)
+      |--> credit-customer-service
       |--> credit-rules-engine-service
-      |--> [credit-limit-service](https://github.com/diogobackend/credit-limit-service)
+      |--> credit-limit-service
       |--> credit-communication-service
       |--> credit-audit-service
 ```
