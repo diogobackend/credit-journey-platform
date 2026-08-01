@@ -1,33 +1,34 @@
 # Credit Journey Platform
 
-Plataforma backend que simula a jornada de crédito de um cliente em um banco digital
+## Sumário
+
+1. [Sobre o projeto Credit Journey Platform](#1---sobre-o-projeto-credit-journey-platform)
+2. [Repositórios](#2---repositórios)
+3. [O que este produto resolve?](#3---o-que-este-produto-resolve)
+4. [Exemplo prático](#4---exemplo-prático)
+5. [Fluxo resumido](#5---fluxo-resumido)
+6. [Objetivo técnico](#6---objetivo-técnico)
+7. [Microservices](#7---microservices)
+8. [Bibliotecas e repositórios de apoio](#8---bibliotecas-e-repositórios-de-apoio)
+9. [Responsabilidade dos serviços](#9---responsabilidade-dos-serviços)
+10. [Arquitetura Hexagonal](#10---arquitetura-hexagonal)
+11. [Comunicação entre serviços](#11---comunicação-entre-serviços)
+12. [Autenticação e autorização](#12---autenticação-e-autorização)
+13. [Banco de dados](#13---banco-de-dados)
+14. [Padrões aplicados](#14---padrões-aplicados)
+15. [Observabilidade](#15---observabilidade)
+16. [Tecnologias](#16---tecnologias)
+17. [Status](#17---status)
+
+---
+
+## 1 - Sobre o projeto Credit Journey Platform
+é uma plataforma backend que simula a jornada de crédito de um cliente em um banco digital
 
 O projeto representa uma arquitetura de microservices usada por um banco emissor de cartão para cadastrar clientes, autenticar usuários, avaliar elegibilidade de crédito, calcular limite, comunicar o cliente e registrar toda a jornada para auditoria
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/64e34eb9-671e-45b1-9852-51d1de49d926" />
 
-
-## Sumário
-
-1. [Repositórios](#1---repositórios)
-2. [O que este produto resolve?](#2---o-que-este-produto-resolve)
-3. [Exemplo prático](#3---exemplo-prático)
-4. [Fluxo resumido](#4---fluxo-resumido)
-5. [Objetivo técnico](#5---objetivo-técnico)
-6. [Microservices](#6---microservices)
-7. [Bibliotecas e repositórios de apoio](#7---bibliotecas-e-repositórios-de-apoio)
-8. [Responsabilidade dos serviços](#8---responsabilidade-dos-serviços)
-9. [Arquitetura Hexagonal](#9---arquitetura-hexagonal)
-10. [Comunicação entre serviços](#10---comunicação-entre-serviços)
-11. [Autenticação e autorização](#11---autenticação-e-autorização)
-12. [Banco de dados](#12---banco-de-dados)
-13. [Padrões aplicados](#13---padrões-aplicados)
-14. [Observabilidade](#14---observabilidade)
-15. [Tecnologias](#15---tecnologias)
-16. [Status](#16---status)
-
----
-
-## 1 - Repositórios
+## 2 - Repositórios
 
 | Repositório | Responsabilidade |
 |---|---|
@@ -44,7 +45,7 @@ O projeto representa uma arquitetura de microservices usada por um banco emissor
 | `credit-shared-contracts` | Contratos de APIs e eventos |
 | `credit-observability-starter` | Lib compartilhada de observabilidade |
 
-## 2 - O que este produto resolve?
+## 3 - O que este produto resolve?
 
 Em um banco digital, a concessão de crédito não acontece em uma única etapa.
 
@@ -62,7 +63,7 @@ A **Credit Journey Platform** simula esse fluxo usando microservices independent
 
 ---
 
-## 3 - Exemplo prático
+## 4 - Exemplo prático
 
 Imagine o seguinte cenário:
 
@@ -89,7 +90,7 @@ Auditoria: registrada
 
 ---
 
-## 4 - Fluxo resumido
+## 5 - Fluxo resumido
 
 ```text
 Cliente / Frontend
@@ -115,7 +116,7 @@ O `credit-orchestrator-service` coordena a jornada de negócio entre os microser
 
 ---
 
-## 5 - Objetivo técnico
+## 6 - Objetivo técnico
 
 Este projeto foi criado como portfólio backend para demonstrar boas práticas de desenvolvimento, arquitetura e operação de sistemas distribuídos.
 
@@ -144,7 +145,7 @@ Principais objetivos:
 
 ---
 
-## 6 - Microservices
+## 7 - Microservices
 
 | Serviço | Responsabilidade |
 |---|---|
@@ -160,7 +161,7 @@ Principais objetivos:
 
 ---
 
-## 7 - Bibliotecas e repositórios de apoio
+## 8 - Bibliotecas e repositórios de apoio
 
 Além dos microservices, a plataforma também possui repositórios de apoio para infraestrutura, contratos e padronização técnica.
 
@@ -176,7 +177,7 @@ Ele é uma biblioteca compartilhada usada pelos serviços para evitar duplicaç�
 
 ---
 
-## 8 - Responsabilidade dos serviços
+## 9 - Responsabilidade dos serviços
 
 ### [credit-customer-service](https://github.com/diogobackend/credit-customer-service)
 
@@ -377,7 +378,7 @@ fun create(input: CreateCustomerInput): Customer
 
 ---
 
-## 9 - Arquitetura Hexagonal
+## 10 - Arquitetura Hexagonal
 
 Cada microservice segue Arquitetura Hexagonal, mantendo o domínio isolado de frameworks e infraestrutura.
 
@@ -473,7 +474,7 @@ Exemplos:
 
 ---
 
-## 10 - Autenticação e autorização
+## 11 - Autenticação e autorização
 
 A autenticação será centralizada no `credit-auth-service`.
 
@@ -505,7 +506,7 @@ Exemplo de payload do token:
 
 ---
 
-## 11 - Banco de dados
+## 12 - Banco de dados
 
 A plataforma utiliza a estratégia `database per service`.
 
@@ -534,7 +535,7 @@ src/main/resources/db/migration/
 
 ---
 
-## 12 - Padrões aplicados
+## 13 - Padrões aplicados
 
 - Arquitetura Hexagonal;
 - Ports and Adapters;
@@ -565,7 +566,7 @@ src/main/resources/db/migration/
 
 ---
 
-## 13 - Observabilidade
+## 14 - Observabilidade
 
 A plataforma será preparada para expor logs, métricas e tracing.
 
@@ -648,7 +649,7 @@ O Grafana será usado para visualizar:
 
 ---
 
-## 14 - Tecnologias
+## 15 - Tecnologias
 
 - Kotlin
 - Java 21
@@ -693,7 +694,7 @@ Esse Peojeto simula problemas comuns de sistemas backend reais.
 
 ---
 
-## 15 - Status
+## 16 - Status
 
 Projeto em desenvolvimento
 
