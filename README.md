@@ -4,6 +4,25 @@ Plataforma backend fictícia que simula a jornada de crédito de um cliente em u
 
 O projeto representa uma arquitetura de microservices usada por um banco emissor de cartão para cadastrar clientes, autenticar usuários, avaliar elegibilidade de crédito, calcular limite, comunicar o cliente e registrar toda a jornada para auditoria.
 
+## Sumário
+
+1. [Repositórios](#1---repositórios)
+2. [O que este produto resolve?](#2---o-que-este-produto-resolve)
+3. [Exemplo prático](#3---exemplo-prático)
+4. [Fluxo resumido](#4---fluxo-resumido)
+5. [Objetivo técnico](#5---objetivo-técnico)
+6. [Microservices](#6---microservices)
+7. [Bibliotecas e repositórios de apoio](#7---bibliotecas-e-repositórios-de-apoio)
+8. [Responsabilidade dos serviços](#8---responsabilidade-dos-serviços)
+9. [Arquitetura Hexagonal](#9---arquitetura-hexagonal)
+10. [Comunicação entre serviços](#10---comunicação-entre-serviços)
+11. [Autenticação e autorização](#11---autenticação-e-autorização)
+12. [Banco de dados](#12---banco-de-dados)
+13. [Padrões aplicados](#13---padrões-aplicados)
+14. [Observabilidade](#14---observabilidade)
+15. [Tecnologias](#15---tecnologias)
+16. [Status](#16---status)
+
 ---
 
 ## 1 - Repositórios
