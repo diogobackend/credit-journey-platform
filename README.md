@@ -49,19 +49,19 @@ Imagine o seguinte cenário:
 2. O `credit-auth-service` autentica o usuário e gera um token JWT.
 3. João acessa a plataforma pelo `credit-api-gateway`.
 4. O `credit-orchestrator-service` inicia a jornada de crédito.
-5. O `credit-customer-service` consulta os dados cadastrais do cliente.
+5. O [credit-customer-service](https://github.com/diogobackend/credit-customer-service) consulta os dados cadastrais do cliente.
 6. O `credit-rules-engine-service` avalia se João pode receber crédito.
-7. Se aprovado, o `credit-limit-service` calcula o limite inicial.
+7. Se aprovado, o [credit-limit-service](https://github.com/diogobackend/credit-limit-service) calcula o limite inicial.
 8. O `credit-communication-service` envia a comunicação ao cliente.
 9. O `credit-audit-service` registra toda a jornada.
 
 Exemplo de resultado:
 
 ```text
-Cliente: João
+Cliente: Diogo Ferreira
 Status: ACTIVE
 Elegibilidade: APPROVED
-Limite inicial: R$ 1.000,00
+Limite inicial: R$ 3.500,00
 Comunicação: enviada
 Auditoria: registrada
 ```
@@ -79,9 +79,9 @@ credit-api-gateway
       v
 credit-orchestrator-service
       |
-      |--> credit-customer-service
+      |--> [credit-customer-service](https://github.com/diogobackend/credit-customer-service)
       |--> credit-rules-engine-service
-      |--> credit-limit-service
+      |--> [credit-limit-service](https://github.com/diogobackend/credit-limit-service)
       |--> credit-communication-service
       |--> credit-audit-service
 ```
@@ -157,7 +157,7 @@ Ele é uma biblioteca compartilhada usada pelos serviços para evitar duplicaç�
 
 ## Responsabilidade dos serviços
 
-### credit-customer-service
+### [credit-customer-service](https://github.com/diogobackend/credit-customer-service)
 
 Responsável pelo cadastro e manutenção dos clientes.
 
@@ -179,7 +179,7 @@ https://github.com/diogobackend/credit-customer-service
 
 ---
 
-### credit-limit-service
+### [credit-limit-service](https://github.com/diogobackend/credit-limit-service)
 
 Responsável pelo cálculo e manutenção do limite de crédito.
 
@@ -658,11 +658,7 @@ O Grafana será usado para visualizar:
 
 ---
 
-## Por que esse projeto é relevante como portfólio?
-
-Este projeto não é apenas um CRUD.
-
-Ele simula problemas comuns de sistemas backend reais.
+Esse Peojeto simula problemas comuns de sistemas backend reais.
 
 | Problema real | Solução aplicada |
 |---|---|
@@ -684,7 +680,7 @@ Ele simula problemas comuns de sistemas backend reais.
 
 ## Status
 
-Projeto em desenvolvimento.
+Projeto em desenvolvimento
 
 Construção incremental planejada:
 
@@ -705,5 +701,6 @@ Construção incremental planejada:
 Status atual:
 
 ```text
-credit-customer-service: CRUD básico implementado
+[credit-customer-service](https://github.com/diogobackend/credit-customer-service): CRUD básico implementado
+[credit-limit-service](https://github.com/diogobackend/credit-limit-service) iniciando desenvolvimento
 ```
