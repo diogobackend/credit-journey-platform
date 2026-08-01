@@ -6,7 +6,7 @@ O projeto representa uma arquitetura de microservices usada por um banco emissor
 
 ---
 
-## Repositórios
+## 1 - Repositórios
 
 | Repositório | Responsabilidade |
 |---|---|
@@ -23,7 +23,7 @@ O projeto representa uma arquitetura de microservices usada por um banco emissor
 | `credit-shared-contracts` | Contratos de APIs e eventos |
 | `credit-observability-starter` | Lib compartilhada de observabilidade |
 
-## O que este produto resolve?
+## 2 - O que este produto resolve?
 
 Em um banco digital, a concessão de crédito não acontece em uma única etapa.
 
@@ -41,7 +41,7 @@ A **Credit Journey Platform** simula esse fluxo usando microservices independent
 
 ---
 
-## Exemplo prático
+## 3 - Exemplo prático
 
 Imagine o seguinte cenário:
 
@@ -68,7 +68,7 @@ Auditoria: registrada
 
 ---
 
-## Fluxo resumido
+## 4 - Fluxo resumido
 
 ```text
 Cliente / Frontend
@@ -94,7 +94,7 @@ O `credit-orchestrator-service` coordena a jornada de negócio entre os microser
 
 ---
 
-## Objetivo técnico
+## 5 - Objetivo técnico
 
 Este projeto foi criado como portfólio backend para demonstrar boas práticas de desenvolvimento, arquitetura e operação de sistemas distribuídos.
 
@@ -123,7 +123,7 @@ Principais objetivos:
 
 ---
 
-## Microservices
+## 6 - Microservices
 
 | Serviço | Responsabilidade |
 |---|---|
@@ -139,7 +139,7 @@ Principais objetivos:
 
 ---
 
-## Bibliotecas e repositórios de apoio
+## 7 - Bibliotecas e repositórios de apoio
 
 Além dos microservices, a plataforma também possui repositórios de apoio para infraestrutura, contratos e padronização técnica.
 
@@ -155,7 +155,7 @@ Ele é uma biblioteca compartilhada usada pelos serviços para evitar duplicaç�
 
 ---
 
-## Responsabilidade dos serviços
+## 8 - Responsabilidade dos serviços
 
 ### [credit-customer-service](https://github.com/diogobackend/credit-customer-service)
 
@@ -356,7 +356,7 @@ fun create(input: CreateCustomerInput): Customer
 
 ---
 
-## Arquitetura Hexagonal
+## 9 - Arquitetura Hexagonal
 
 Cada microservice segue Arquitetura Hexagonal, mantendo o domínio isolado de frameworks e infraestrutura.
 
@@ -452,7 +452,7 @@ Exemplos:
 
 ---
 
-## Autenticação e autorização
+## 10 - Autenticação e autorização
 
 A autenticação será centralizada no `credit-auth-service`.
 
@@ -484,7 +484,7 @@ Exemplo de payload do token:
 
 ---
 
-## Banco de dados
+## 11 - Banco de dados
 
 A plataforma utiliza a estratégia `database per service`.
 
@@ -513,7 +513,7 @@ src/main/resources/db/migration/
 
 ---
 
-## Padrões aplicados
+## 12 - Padrões aplicados
 
 - Arquitetura Hexagonal;
 - Ports and Adapters;
@@ -544,7 +544,7 @@ src/main/resources/db/migration/
 
 ---
 
-## Observabilidade
+## 13 - Observabilidade
 
 A plataforma será preparada para expor logs, métricas e tracing.
 
@@ -627,7 +627,7 @@ O Grafana será usado para visualizar:
 
 ---
 
-## Tecnologias
+## 14 - Tecnologias
 
 - Kotlin
 - Java 21
@@ -672,7 +672,7 @@ Esse Peojeto simula problemas comuns de sistemas backend reais.
 
 ---
 
-## Status
+## 15 - Status
 
 Projeto em desenvolvimento
 
