@@ -66,7 +66,7 @@ Imagine o seguinte cenário:
 
 1. João faz login na plataforma.
 2. O `credit-auth-service` autentica o usuário e gera um token JWT.
-3. João acessa a plataforma pelo `credit-api-gateway`.
+3. Diogo acessa a plataforma pelo `credit-api-gateway`.
 4. O `credit-orchestrator-service` inicia a jornada de crédito.
 5. O [credit-customer-service](https://github.com/diogobackend/credit-customer-service) consulta os dados cadastrais do cliente.
 6. O `credit-rules-engine-service` avalia se João pode receber crédito.
