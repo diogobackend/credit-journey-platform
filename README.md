@@ -23,7 +23,7 @@
 ---
 
 ## 1 - Sobre o projeto Credit Journey Platform
-é uma plataforma backend que simula a jornada de crédito de um cliente em um banco digital
+é uma plataforma backend que trilha a jornada de crédito de um cliente em um banco digital
 
 O projeto representa uma arquitetura de microservices usada por um banco emissor de cartão para cadastrar clientes, autenticar usuários, avaliar elegibilidade de crédito, calcular limite, comunicar o cliente e registrar toda a jornada para auditoria
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/64e34eb9-671e-45b1-9852-51d1de49d926" />
