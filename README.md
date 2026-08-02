@@ -67,12 +67,12 @@ A **Credit Journey Platform** simula esse fluxo usando microservices independent
 
 Imagine o seguinte cenário:
 
-1. João faz login na plataforma.
+1. Diogo faz login na plataforma.
 2. O `credit-auth-service` autentica o usuário e gera um token JWT.
 3. Diogo acessa a plataforma pelo `credit-api-gateway`.
 4. O `credit-orchestrator-service` inicia a jornada de crédito.
 5. O [credit-customer-service](https://github.com/diogobackend/credit-customer-service) consulta os dados cadastrais do cliente.
-6. O `credit-rules-engine-service` avalia se João pode receber crédito.
+6. O `credit-rules-engine-service` avalia se Diogo pode receber crédito.
 7. Se aprovado, o [credit-limit-service](https://github.com/diogobackend/credit-limit-service) calcula o limite inicial.
 8. O `credit-communication-service` envia a comunicação ao cliente.
 9. O `credit-audit-service` registra toda a jornada.
